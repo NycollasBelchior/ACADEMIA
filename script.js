@@ -92,6 +92,87 @@ document.getElementById('testiPrev').addEventListener('click', ()=>goTo(current-
 document.getElementById('testiNext').addEventListener('click', ()=>goTo(current+1));
 setInterval(()=>goTo(current+1), 6000);
 
+// respect reduced motion preference
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// animated stat counters (start only when visible)
+const counters = document.querySelectorAll('.counter');
+function animateCounter(el){
+  const target = parseInt(el.dataset.count, 10) || 0;
+  const prefix = el.dataset.prefix || '';
+  const suffix = el.dataset.suffix || '';
+  if(reduceMotion){
+    el.textContent = prefix + target + suffix;
+    return;
+  }
+  const duration = 1400;
+  const start = performance.now();
+  function tick(now){
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const value = Math.round(target * eased);
+    el.textContent = prefix + value + suffix;
+    if(progress < 1){ requestAnimationFrame(tick); }
+  }
+  requestAnimationFrame(tick);
+}
+if(counters.length){
+  const counterIO = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        animateCounter(entry.target);
+        counterIO.unobserve(entry.target);
+      }
+    });
+  }, {threshold:.4});
+  counters.forEach(c=>counterIO.observe(c));
+}
+
+// ripple effect on primary buttons
+const rippleTargets = document.querySelectorAll('.btn-primary, .btn-ghost, .btn-block, .plan-btn, .nav-cta');
+rippleTargets.forEach(btn=>{
+  btn.classList.add('ripple-host');
+  btn.addEventListener('click', (e)=>{
+    if(reduceMotion) return;
+    const rect = btn.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    const ripple = document.createElement('span');
+    ripple.className = 'ripple';
+    ripple.style.width = ripple.style.height = size + 'px';
+    ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+    ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+    btn.appendChild(ripple);
+    ripple.addEventListener('animationend', ()=>ripple.remove());
+  });
+});
+
+// subtle scroll parallax on select images
+const parallaxEls = document.querySelectorAll('.parallax-img');
+if(parallaxEls.length && !reduceMotion){
+  const parallaxVisible = new Set();
+  const pIO = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting) parallaxVisible.add(entry.target);
+      else parallaxVisible.delete(entry.target);
+    });
+  }, {threshold:0});
+  parallaxEls.forEach(el=>pIO.observe(el));
+
+  let ticking = false;
+  function updateParallax(){
+    parallaxVisible.forEach(el=>{
+      const rect = el.getBoundingClientRect();
+      const center = rect.top + rect.height / 2 - window.innerHeight / 2;
+      const offset = Math.max(-14, Math.min(14, center * -0.04));
+      el.style.setProperty('--py', offset + 'px');
+    });
+    ticking = false;
+  }
+  window.addEventListener('scroll', ()=>{
+    if(!ticking){ requestAnimationFrame(updateParallax); ticking = true; }
+  }, {passive:true});
+}
+
 // smooth anchor scroll offset (for fixed header)
 document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
   anchor.addEventListener('click', function(e){

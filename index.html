@@ -69,25 +69,30 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
+  <div class="hero-floaters" aria-hidden="true">
+    <span class="floater f1"></span>
+    <span class="floater f2"></span>
+    <span class="floater f3"></span>
+  </div>
   <div class="container hero-grid">
     <div>
-      <span class="hero-eyebrow">Personal Trainer</span>
-      <h1>Transforme seu corpo com <em>acompanhamento profissional</em>.</h1>
-      <p class="lead">Treinos personalizados para emagrecimento, ganho de massa muscular, saúde e qualidade de vida.</p>
-      <div class="hero-actions">
-        <a href="#" class="btn-primary wa-link">
+      <span class="hero-eyebrow hero-in" style="animation-delay:.1s;">Personal Trainer</span>
+      <h1 class="hero-in" style="animation-delay:.22s;">Transforme seu corpo com <em>acompanhamento profissional</em>.</h1>
+      <p class="lead hero-in" style="animation-delay:.34s;">Treinos personalizados para emagrecimento, ganho de massa muscular, saúde e qualidade de vida.</p>
+      <div class="hero-actions hero-in" style="animation-delay:.46s;">
+        <a href="#" class="btn-primary wa-link hero-pulse">
           Quero começar agora
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
         <a href="#planos" class="btn-ghost">Ver planos</a>
       </div>
-      <div class="hero-stats">
-        <div><b>+300</b><span>Alunos transformados</span></div>
-        <div><b>7 anos</b><span>De experiência</span></div>
-        <div><b>100%</b><span>Treino personalizado</span></div>
+      <div class="hero-stats hero-in" style="animation-delay:.58s;">
+        <div><b class="counter" data-count="300" data-prefix="+">0</b><span>Alunos transformados</span></div>
+        <div><b class="counter" data-count="7" data-suffix=" anos">0</b><span>De experiência</span></div>
+        <div><b class="counter" data-count="100" data-suffix="%">0</b><span>Treino personalizado</span></div>
       </div>
     </div>
-    <div class="orb-wrap">
+    <div class="orb-wrap hero-in-right">
       <div class="orb" id="orb">
         <div class="orb-inner">
           <img src="images/fabyana-foto.png" alt="Faby Angel - Personal Trainer" class="orb-photo">
@@ -106,7 +111,7 @@
   <div class="container about-grid">
     <div class="reveal">
       <div class="about-photo">
-        <img src="images/fabyana-foto.png" alt="Faby Angel Personal Trainer" class="about-photo-img">
+        <img src="images/fabyana-foto.png" alt="Faby Angel Personal Trainer" class="about-photo-img parallax-img">
         <div class="about-badge"><b>Personal Trainer & Musculação</b><span>Especialidades</span></div>
       </div>
     </div>
@@ -351,7 +356,7 @@
 <!-- CTA FINAL -->
 <section class="final-cta">
   <div class="container">
-    <div class="final-photo reveal"><img src="images/fabyana-foto.png" alt="Faby Angel" class="final-photo-img"></div>
+    <div class="final-photo reveal"><img src="images/fabyana-foto.png" alt="Faby Angel" class="final-photo-img parallax-img"></div>
     <h2 class="reveal">Sua transformação começa hoje.</h2>
     <p class="reveal">Dê o primeiro passo agora mesmo. Fale comigo pelo WhatsApp e monte seu plano personalizado.</p>
     <a href="#" class="btn-primary wa-link reveal" data-msg="Olá! Gostaria de começar meus treinos." style="font-size:1.05rem;padding:19px 40px;">Falar no WhatsApp</a>
@@ -361,7 +366,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="container">
-    <div class="footer-grid">
+    <div class="footer-grid reveal">
       <div class="footer-brand">
         <a href="#home" class="logo">FABY<span>ANGEL</span></a>
         <p>Personal Trainer especializada em treinos personalizados, emagrecimento, hipertrofia e definição muscular. Sua transformação começa com o primeiro passo.</p>
@@ -388,7 +393,7 @@
         <p>Florianópolis, SC — Brasil</p>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div class="footer-bottom reveal">
       <span>© <span id="year"></span> Faby Angel Personal Trainer. Todos os direitos reservados.</span>
       <span>Feito com dedicação para transformar vidas.</span>
     </div>
