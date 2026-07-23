@@ -3,407 +3,246 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Faby Angel | Personal Trainer — Transforme seu corpo, transforme sua vida</title>
-<meta name="description" content="Treinos personalizados para emagrecimento, hipertrofia, saúde e qualidade de vida com a Personal Trainer Faby Angel. Agende agora pelo WhatsApp.">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Faby Angel | Personal Trainer">
-<meta property="og:description" content="Treinos personalizados para emagrecimento, hipertrofia, saúde e qualidade de vida. Agende agora pelo WhatsApp.">
-<meta property="og:image" content="">
-<meta property="og:locale" content="pt_BR">
-
-<!-- Schema.org -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ExerciseGym",
-  "name": "Faby Angel Personal Trainer",
-  "description": "Treinos personalizados para emagrecimento, ganho de massa muscular, saúde e qualidade de vida.",
-  "sameAs": ["https://www.instagram.com/fabyangel_tudo_fitness"],
-  "telephone": "+5548991843136"
-}
-</script>
-
+<title>Fabiana Cordeiro | Personal Trainer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="preloader">
-  <div class="pre-mark">FABY<span>ANGEL</span></div>
-  <div class="pre-bar"><i></i></div>
-</div>
-
-<header id="siteHeader">
-  <div class="container">
+<header id="site-header">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo">FABY<span>ANA</span><small>Personal Trainer · CREF 040677G.SC</small></a>
     <nav>
-      <a href="#home" class="logo">FABY<span>ANGEL</span></a>
-      <div class="nav-links">
-        <a href="#sobre">Sobre</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#planos">Planos</a>
-        <a href="#beneficios">Benefícios</a>
-        <a href="#depoimentos">Depoimentos</a>
-        <a href="#faq">FAQ</a>
-      </div>
-      <a href="#" class="nav-cta wa-link">Falar no WhatsApp</a>
-      <button class="burger" id="burgerBtn"><div></div><div></div><div></div></button>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#loja">Loja</a></li>
+        <li><a href="#instagram">Instagram</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </nav>
+    <a class="btn btn-primary btn-small nav-cta-visible" id="nav-whats" target="_blank" rel="noopener">WhatsApp</a>
+    <button class="mobile-toggle" id="mobileToggle"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<div class="menu-overlay" id="menuOverlay"></div>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#sobre">Sobre</a>
-  <a href="#produtos">Produtos</a>
-  <a href="#planos">Planos</a>
-  <a href="#beneficios">Benefícios</a>
-  <a href="#depoimentos">Depoimentos</a>
-  <a href="#faq">FAQ</a>
-  <a href="#" class="nav-cta wa-link" style="text-align:center;">Falar no WhatsApp</a>
-</div>
-
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-floaters" aria-hidden="true">
-    <span class="floater f1"></span>
-    <span class="floater f2"></span>
-    <span class="floater f3"></span>
-  </div>
-  <div class="container hero-grid">
-    <div>
-      <span class="hero-eyebrow hero-in" style="animation-delay:.1s;">Personal Trainer</span>
-      <h1 class="hero-in" style="animation-delay:.22s;">Transforme seu corpo com <em>acompanhamento profissional</em>.</h1>
-      <p class="lead hero-in" style="animation-delay:.34s;">Treinos personalizados para emagrecimento, ganho de massa muscular, saúde e qualidade de vida.</p>
-      <div class="hero-actions hero-in" style="animation-delay:.46s;">
-        <a href="#" class="btn-primary wa-link hero-pulse">
-          Quero começar agora
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="#planos" class="btn-ghost">Ver planos</a>
-      </div>
-      <div class="hero-stats hero-in" style="animation-delay:.58s;">
-        <div><b class="counter" data-count="300" data-prefix="+">0</b><span>Alunos transformados</span></div>
-        <div><b class="counter" data-count="7" data-suffix=" anos">0</b><span>De experiência</span></div>
-        <div><b class="counter" data-count="100" data-suffix="%">0</b><span>Treino personalizado</span></div>
+<section class="hero" id="top">
+  <div class="hero-slash"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <div class="eyebrow">Força · Estética · Performance</div>
+      <h1>SUA EVOLUÇÃO<br>COMEÇA <em>AGORA</em></h1>
+      <p>Treinos de força e hipertrofia construídos sob medida para o seu corpo, sua rotina e seus objetivos — com acompanhamento individual do primeiro treino ao resultado que você vê no espelho.</p>
+      <a class="btn btn-primary" id="hero-whats" target="_blank" rel="noopener">Entrar em contato</a>
+      <div class="hero-stats">
+        <div><b>48</b><span>Anos de idade</span></div>
+        <div><b>16</b><span>Anos de experiência</span></div>
+        <div><b>CREF</b><span>040677G.SC</span></div>
       </div>
     </div>
-    <div class="orb-wrap hero-in-right">
-      <div class="orb" id="orb">
-        <div class="orb-inner">
-          <img src="images/fabyana-foto.png" alt="Faby Angel - Personal Trainer" class="orb-photo">
-        </div>
-        <div class="orb-particle" style="width:8px;height:8px;top:18%;left:15%;animation-delay:.2s;"></div>
-        <div class="orb-particle" style="width:5px;height:5px;top:70%;left:80%;animation-delay:1s;"></div>
-        <div class="orb-particle" style="width:6px;height:6px;top:30%;left:85%;animation-delay:1.8s;"></div>
-      </div>
-    </div>
-  </div>
-  <div class="scroll-cue"><span>Role</span><i></i></div>
-</section>
-
-<!-- SOBRE -->
-<section class="about section" id="sobre">
-  <div class="container about-grid">
-    <div class="reveal">
-      <div class="about-photo">
-        <img src="images/fabyana-foto.png" alt="Faby Angel Personal Trainer" class="about-photo-img parallax-img">
-        <div class="about-badge"><b>Personal Trainer & Musculação</b><span>Especialidades</span></div>
-      </div>
-    </div>
-    <div class="reveal">
-      <span class="eyebrow">Sobre mim</span>
-      <h2 class="section-title" style="margin-bottom:24px;">Uma guerreira que transforma vidas através do movimento.</h2>
-      <div class="about-text">
-        <p>Tenho 48 anos e sou personal trainer, especialista em treinos de força, hipertrofia, definição muscular, estratégia avançada e treino de emagrecimento.</p>
-        <p>Com anos de experiência e a vida de vários alunos já transformada, meu foco é te guiar em uma jornada de resultados reais — seja para emagrecimento, ganho de massa ou mais qualidade de vida.</p>
-        <p>Ofereço acompanhamento individual e planejamento de treinos personalizados, com a flexibilidade de formato presencial ou online.</p>
+    <div class="hero-photo-wrap reveal">
+      <div class="photo-corner"></div>
+      <div class="photo-frame">
+        <img src="images/fabyana-hero.jpg" alt="Fabiana Cordeiro, personal trainer">
+        <div class="photo-tag"><span>FABIANA CORDEIRO</span><span>PERSONAL TRAINER</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PRODUTOS -->
-<section class="section" id="produtos">
-  <div class="container">
+<section class="about" id="sobre">
+  <div class="wrap about-grid">
+    <div class="about-photo reveal">
+      <img src="images/fabyana-hero.jpg" alt="Fabiana Cordeiro">
+      <div class="about-badge">Presencial ou Online</div>
+    </div>
+    <div class="about-copy reveal">
+      <div class="eyebrow">Quem te acompanha</div>
+      <h2 style="font-size:clamp(30px,4vw,46px);margin-bottom:26px;">Fabiana Cordeiro</h2>
+      <p><b>Tenho 48 anos e sou personal trainer há 16 anos</b>, especialista em treinos de força, hipertrofia, definição muscular e estratégia avançada em treino de emagrecimento.</p>
+      <p>Com a experiência de já ter <b>transformado a vida de vários alunos</b>, meu foco é te guiar em uma jornada de resultados reais — seja para emagrecimento, ganho de massa ou mais qualidade de vida.</p>
+      <p>Ofereço acompanhamento individual e planejamento de treinos personalizados, com a flexibilidade do formato <b>presencial ou online</b>.</p>
+      <div class="about-specialties">
+        <span class="chip">Treino de Força</span>
+        <span class="chip">Hipertrofia</span>
+        <span class="chip">Definição Muscular</span>
+        <span class="chip">Emagrecimento</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="plans" id="planos">
+  <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Suplementos recomendados</span>
-      <h2 class="section-title">Performance também se constrói na nutrição.</h2>
-      <p class="section-sub">Produtos selecionados por mim para potencializar seus resultados dentro e fora do treino.</p>
-    </div>
-    <div class="products-grid">
-      <div class="product-card reveal">
-        <div class="product-media">
-          <span class="product-tag">Mais vendido</span>
-          <img src="images/creatina-mastigavel.jpg" alt="Creatina Mastigável sabor maçã verde" loading="lazy">
-        </div>
-        <div class="product-body">
-          <h3>Creatina Mastigável</h3>
-          <p class="desc">Creatina monohidratada em versão mastigável, sabor maçã verde. Praticidade para o dia a dia sem abrir mão da qualidade.</p>
-          <ul class="benefit-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Creatina Monohidratada pura</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Mastigável, fácil de consumir</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Sabor maçã verde refrescante</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Excelente para força e desempenho</li>
-          </ul>
-          <a href="#" class="btn-block wa-link" data-msg="Olá! Gostaria de comprar a Creatina Mastigável. Pode me informar o valor?">Comprar pelo WhatsApp</a>
-        </div>
-      </div>
-      <div class="product-card reveal">
-        <div class="product-media">
-          <span class="product-tag">Beleza & Pele</span>
-          <img src="images/colageno-premium.jpg" alt="Colágeno Premium com ácido hialurônico" loading="lazy">
-        </div>
-        <div class="product-body">
-          <h3>Colágeno Premium</h3>
-          <p class="desc">Fórmula com ácido hialurônico e peptídeos bioativos para pele, cabelo e articulações mais saudáveis.</p>
-          <ul class="benefit-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Ácido hialurônico</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Fortalece os cabelos</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Auxilia na hidratação da pele</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Peptídeos bioativos</li>
-          </ul>
-          <a href="#" class="btn-block wa-link" data-msg="Olá! Gostaria de comprar o Colágeno Premium. Pode me informar o valor?">Comprar pelo WhatsApp</a>
-        </div>
-      </div>
-      <div class="product-card reveal">
-        <div class="product-media">
-          <span class="product-tag">Fórmula completa</span>
-          <img src="images/acido-hialuronico.png" alt="Ácido Hialurônico mastigável sabor framboesa" loading="lazy">
-        </div>
-        <div class="product-body">
-          <h3>Ácido Hialurônico</h3>
-          <p class="desc">Mastigável sabor framboesa, com vitaminas e biotina para hidratação da pele e apoio à beleza de dentro para fora.</p>
-          <ul class="benefit-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Fórmula completa com Vitamina B9 e C</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Vitamina E + Biotina</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Mastigável, sabor framboesa</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Auxilia na hidratação e viço da pele</li>
-          </ul>
-          <a href="#" class="btn-block wa-link" data-msg="Olá! Gostaria de comprar o Ácido Hialurônico. Pode me informar o valor?">Comprar pelo WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PLANOS -->
-<section class="plans section" id="planos">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="eyebrow">Personal Trainer</span>
-      <h2 class="section-title">Escolha o ritmo da sua transformação.</h2>
-      <p class="section-sub">Planos flexíveis com acompanhamento 100% individual, ajustados à sua rotina e objetivo.</p>
+      <div class="eyebrow">Planos de Personal Trainer</div>
+      <h2>Escolha sua frequência de treino</h2>
+      <p>Cada plano inclui treinos personalizados e acompanhamento individual — a diferença está na frequência e na intensidade da sua evolução.</p>
     </div>
     <div class="plans-grid">
+
       <div class="plan-card reveal">
-        <div class="plan-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 3v18M18 3v18M4 8h4M4 16h4M16 8h4M16 16h4"/></svg></div>
-        <h4>2x por semana</h4>
-        <div class="plan-price">R$350<span>/mês</span></div>
-        <p class="plan-desc">Ideal para quem está começando ou tem rotina mais corrida.</p>
-        <a href="#" class="plan-btn wa-link" data-msg="Olá! Gostaria de saber mais sobre o plano de Personal 2x por semana.">Tenho interesse</a>
+        <div class="plan-freq">2X POR SEMANA</div>
+        <h3>Personal Base</h3>
+        <ul>
+          <li>Treinos personalizados</li>
+          <li>Acompanhamento individual</li>
+          <li>Ideal para iniciar com consistência</li>
+        </ul>
+        <div class="plan-price"><span>Investimento</span>R$350</div>
+        <a class="btn btn-outline plan-btn" data-plan="Personal 2x por semana" target="_blank" rel="noopener">Quero esse plano</a>
       </div>
-      <div class="plan-card featured reveal">
-        <span class="plan-badge">Mais popular</span>
-        <div class="plan-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 3v18M18 3v18M4 8h4M4 16h4M16 8h4M16 16h4"/></svg></div>
-        <h4>3x por semana</h4>
-        <div class="plan-price">R$450<span>/mês</span></div>
-        <p class="plan-desc">O equilíbrio perfeito entre frequência e resultado.</p>
-        <a href="#" class="plan-btn wa-link" data-msg="Olá! Gostaria de saber mais sobre o plano de Personal 3x por semana.">Tenho interesse</a>
-      </div>
+
       <div class="plan-card reveal">
-        <div class="plan-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 3v18M18 3v18M4 8h4M4 16h4M16 8h4M16 16h4"/></svg></div>
-        <h4>4x por semana</h4>
-        <div class="plan-price">R$550<span>/mês</span></div>
-        <p class="plan-desc">Para quem quer acelerar a evolução com constância.</p>
-        <a href="#" class="plan-btn wa-link" data-msg="Olá! Gostaria de saber mais sobre o plano de Personal 4x por semana.">Tenho interesse</a>
+        <div class="plan-freq">3X POR SEMANA</div>
+        <h3>Personal Evolução</h3>
+        <ul>
+          <li>Maior frequência de treino</li>
+          <li>Foco em resultados</li>
+          <li>Progressão de carga acelerada</li>
+        </ul>
+        <div class="plan-price"><span>Investimento</span>R$450</div>
+        <a class="btn btn-outline plan-btn" data-plan="Personal 3x por semana" target="_blank" rel="noopener">Quero esse plano</a>
       </div>
+
       <div class="plan-card reveal">
-        <div class="plan-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 3v18M18 3v18M4 8h4M4 16h4M16 8h4M16 16h4"/></svg></div>
-        <h4>Semana toda</h4>
-        <div class="plan-price">R$650<span>/mês</span></div>
-        <p class="plan-desc">Acompanhamento máximo, todos os dias ao seu lado.</p>
-        <a href="#" class="plan-btn wa-link" data-msg="Olá! Gostaria de saber mais sobre o plano de Personal para a semana toda.">Tenho interesse</a>
+        <div class="plan-freq">4X POR SEMANA</div>
+        <h3>Personal Intensivo</h3>
+        <ul>
+          <li>Acompanhamento intensivo</li>
+          <li>Evolução acelerada</li>
+          <li>Ajustes finos de treino toda semana</li>
+        </ul>
+        <div class="plan-price"><span>Investimento</span>R$550</div>
+        <a class="btn btn-outline plan-btn" data-plan="Personal 4x por semana" target="_blank" rel="noopener">Quero esse plano</a>
       </div>
+
+      <div class="plan-card top reveal">
+        <div class="plan-badge">Máximo Acompanhamento</div>
+        <div class="plan-freq">TODOS OS DIAS ÚTEIS</div>
+        <h3>Plano Completo</h3>
+        <ul>
+          <li>Acompanhamento máximo durante a semana</li>
+          <li>Prioridade nos ajustes de treino</li>
+          <li>Suporte contínuo com a Fabiana</li>
+        </ul>
+        <div class="plan-price"><span>Investimento</span>R$650</div>
+        <a class="btn btn-primary plan-btn" data-plan="Plano completo" target="_blank" rel="noopener">Quero esse plano</a>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- BENEFICIOS -->
-<section class="section" id="beneficios">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="eyebrow">Por que treinar comigo</span>
-      <h2 class="section-title">Resultado de verdade, no seu tempo.</h2>
+<section class="store" id="loja">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Loja de Suplementos</div>
+      <h2>Potencialize seus resultados</h2>
+      <p>Suplementos selecionados para acompanhar seu treino, sua recuperação e sua estética — com compra direta pelo WhatsApp.</p>
     </div>
-    <div class="benefits-grid">
-      <div class="benefit-tile reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M13 2 3 14h7l-1 8 11-14h-7l1-6Z"/></svg></div>
-        <h4>Emagrecimento</h4>
-        <p>Treinos estratégicos para queima de gordura sustentável.</p>
-      </div>
-      <div class="benefit-tile reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6.5 6.5 3 3M17.5 6.5 21 3M6.5 17.5 3 21M17.5 17.5 21 21M9 9h6v6H9z"/></svg></div>
-        <h4>Hipertrofia</h4>
-        <p>Ganho de massa muscular com técnica e progressão de carga.</p>
-      </div>
-      <div class="benefit-tile reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M2 12h4l2-8 4 16 3-11 2 3h5"/></svg></div>
-        <h4>Condicionamento físico</h4>
-        <p>Mais fôlego, resistência e disposição no dia a dia.</p>
-      </div>
-      <div class="benefit-tile reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-4.35-9.5-9C.8 8.1 2.6 4.5 6 4.5c2 0 3.3 1.2 4 2.3.7-1.1 2-2.3 4-2.3 3.4 0 5.2 3.6 3.5 7.5C19 16.65 12 21 12 21Z"/></svg></div>
-        <h4>Saúde</h4>
-        <p>Cuidado com o corpo em todas as fases da sua vida.</p>
-      </div>
-      <div class="benefit-tile reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></div>
-        <h4>Qualidade de vida</h4>
-        <p>Mais energia, autoestima e bem-estar em todas as áreas.</p>
-      </div>
-      <div class="benefit-tile reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 19V5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M9 12h6M9 16h6"/></svg></div>
-        <h4>Treinos personalizados</h4>
-        <p>Planejamento sob medida para o seu corpo e objetivo.</p>
-      </div>
-      <div class="benefit-tile reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M17 20h5v-2a4 4 0 0 0-3-3.87M9 20H4v-2a4 4 0 0 1 3-3.87m5-5.13a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm6 2a4 4 0 1 0-3-6.65"/></svg></div>
-        <h4>Acompanhamento próximo</h4>
-        <p>Suporte constante para ajustar o treino sempre que precisar.</p>
-      </div>
-      <div class="benefit-tile reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
-        <h4>Personal Trainer & energia</h4>
-        <p>Treinos que unem energia, ritmo e queima de calorias.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <div class="store-grid">
 
-<!-- DEPOIMENTOS -->
-<section class="testi section" id="depoimentos">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="eyebrow">Depoimentos</span>
-      <h2 class="section-title">Quem treina comigo, sente a diferença.</h2>
-      <p class="section-sub">Exemplos ilustrativos — em breve substituídos pelos depoimentos reais dos alunos.</p>
-    </div>
-    <div class="testi-track-wrap reveal">
-      <button class="testi-arrow prev" id="testiPrev">&#8592;</button>
-      <button class="testi-arrow next" id="testiNext">&#8594;</button>
-      <div class="testi-slide active">
-        <div class="testi-stars">★★★★★</div>
-        <p class="quote">Em 4 meses perdi 8kg e ganhei uma disposição que não tinha há anos. A Faby entende cada fase do meu corpo.</p>
-        <div class="testi-author">
-          <div class="testi-avatar">C</div>
-          <div><b>Carla M.</b><span>Aluna há 8 meses</span></div>
+      <div class="product-card reveal">
+        <div class="product-media"><img src="images/prod-b12.jpg" alt="Vitamina B12 Metilcobalamina"></div>
+        <div class="product-body">
+          <h3>Vitamina B12 Metilcobalamina</h3>
+          <p>Comprimidos mastigáveis sabor frutas vermelhas. Auxilia na formação de células vermelhas no sangue e no funcionamento do sistema imune.</p>
+          <div class="product-foot">
+            <div class="product-price"><small>Por</small>R$59,99</div>
+            <a class="btn btn-outline btn-small product-btn" data-product="Vitamina B12 Metilcobalamina" target="_blank" rel="noopener">Comprar</a>
+          </div>
         </div>
       </div>
-      <div class="testi-slide">
-        <div class="testi-stars">★★★★★</div>
-        <p class="quote">As aulas de Personal Trainer mudaram minha relação com o exercício. Hoje treinar é a melhor parte do meu dia.</p>
-        <div class="testi-author">
-          <div class="testi-avatar">J</div>
-          <div><b>Juliana R.</b><span>Aluna há 1 ano</span></div>
+
+      <div class="product-card reveal">
+        <div class="product-media"><img src="images/prod-creatina.jpg" alt="Creatina Monohidratada"></div>
+        <div class="product-body">
+          <h3>Creatina Monohidratada</h3>
+          <p>Mastigável sabor maçã verde. Suporte à força, performance e ganho de massa muscular no treino de alta intensidade.</p>
+          <div class="product-foot">
+            <div class="product-price"><small>Por</small>R$59,99</div>
+            <a class="btn btn-outline btn-small product-btn" data-product="Creatina Monohidratada" target="_blank" rel="noopener">Comprar</a>
+          </div>
         </div>
       </div>
-      <div class="testi-slide">
-        <div class="testi-stars">★★★★★</div>
-        <p class="quote">Comecei sedentário e com receio de me machucar. O acompanhamento próximo fez toda a diferença.</p>
-        <div class="testi-author">
-          <div class="testi-avatar">R</div>
-          <div><b>Rodrigo P.</b><span>Aluno há 5 meses</span></div>
+
+      <div class="product-card reveal">
+        <div class="product-media"><img src="images/prod-colageno-hidrolisado.jpg" alt="Colágeno Hidrolisado + Ácido Hialurônico"></div>
+        <div class="product-body">
+          <h3>Colágeno Hidrolisado + Ácido Hialurônico</h3>
+          <p>Comprimidos de 1000mg sabor frutas vermelhas. Cuidado para cabelo, pele e unhas aliado à recuperação pós-treino.</p>
+          <div class="product-foot">
+            <div class="product-price"><small>Por</small>R$59,99</div>
+            <a class="btn btn-outline btn-small product-btn" data-product="Colágeno Hidrolisado + Ácido Hialurônico" target="_blank" rel="noopener">Comprar</a>
+          </div>
         </div>
       </div>
-      <div class="testi-dots" id="testiDots"></div>
+
+      <div class="product-card reveal">
+        <div class="product-media"><img src="images/prod-colageno-premium.jpg" alt="Colágeno Premium + Ácido Hialurônico"></div>
+        <div class="product-body">
+          <h3>Colágeno Premium + Ácido Hialurônico</h3>
+          <p>2,5g de peptídeos bioativos de colágeno por dose. Comprimidos mastigáveis sabor tutti-frutti.</p>
+          <div class="product-foot">
+            <div class="product-price"><small>Por</small>R$59,99</div>
+            <a class="btn btn-outline btn-small product-btn" data-product="Colágeno Premium + Ácido Hialurônico" target="_blank" rel="noopener">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-media"><img src="images/prod-acido-hialuronico.jpg" alt="Ácido Hialurônico New"></div>
+        <div class="product-body">
+          <h3>Ácido Hialurônico New</h3>
+          <p>Com colágeno hidrolisado, vitamina C, vitamina E e biotina. Mastigável sabor framboesa, zero açúcar.</p>
+          <div class="product-foot">
+            <div class="product-price"><small>Por</small>R$59,99</div>
+            <a class="btn btn-outline btn-small product-btn" data-product="Ácido Hialurônico New" target="_blank" rel="noopener">Comprar</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="section" id="faq">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="eyebrow">Dúvidas frequentes</span>
-      <h2 class="section-title">Perguntas & respostas.</h2>
+<section class="insta" id="instagram">
+  <div class="wrap insta-inner reveal">
+    <div class="insta-icon">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#e2122a" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="#e2122a" stroke="none"/></svg>
     </div>
-    <div class="faq-list reveal">
-      <div class="faq-item">
-        <button class="faq-q">Preciso já saber treinar? <span class="plus">+</span></button>
-        <div class="faq-a"><p>Não! Todo treino é ensinado e ajustado durante as sessões, do zero até o avançado, no seu ritmo.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">O treino é personalizado? <span class="plus">+</span></button>
-        <div class="faq-a"><p>Sim, cada plano é montado de acordo com seu objetivo, seu histórico de saúde e sua rotina.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Posso começar sedentário? <span class="plus">+</span></button>
-        <div class="faq-a"><p>Com certeza. A progressão é feita com segurança, respeitando seu ponto de partida e sua evolução.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Como funciona o pagamento? <span class="plus">+</span></button>
-        <div class="faq-a"><p>O pagamento é mensal, combinado diretamente comigo pelo WhatsApp, com total flexibilidade.</p></div>
-      </div>
+    <h2>Acompanhe nos treinos</h2>
+    <p>Bastidores, dicas de treino e transformações reais de alunos, todos os dias.</p>
+    <a class="insta-handle" href="https://instagram.com/fabyangel_personal_ginastica" target="_blank" rel="noopener">@fabyangel_personal_ginastica</a>
+    <div style="margin-top:34px;">
+      <a class="btn btn-primary" href="https://instagram.com/fabyangel_personal_ginastica" target="_blank" rel="noopener">Seguir no Instagram</a>
     </div>
   </div>
 </section>
 
-<!-- CTA FINAL -->
-<section class="final-cta">
-  <div class="container">
-    <div class="final-photo reveal"><img src="images/fabyana-foto.png" alt="Faby Angel" class="final-photo-img parallax-img"></div>
-    <h2 class="reveal">Sua transformação começa hoje.</h2>
-    <p class="reveal">Dê o primeiro passo agora mesmo. Fale comigo pelo WhatsApp e monte seu plano personalizado.</p>
-    <a href="#" class="btn-primary wa-link reveal" data-msg="Olá! Gostaria de começar meus treinos." style="font-size:1.05rem;padding:19px 40px;">Falar no WhatsApp</a>
+<section class="contact" id="contato">
+  <div class="contact-slash"></div>
+  <div class="wrap contact-inner reveal">
+    <div class="eyebrow" style="justify-content:center;">Vamos treinar juntos</div>
+    <h2>Sua transformação<br>começa com uma mensagem</h2>
+    <p>Fale agora com a Fabiana e monte o plano de treino ideal para o seu objetivo.</p>
+    <div class="contact-actions">
+      <a class="btn btn-primary" id="contact-whats" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      <a class="btn btn-outline" href="https://instagram.com/fabyangel_personal_ginastica" target="_blank" rel="noopener">Ver Instagram</a>
+    </div>
+    <footer>
+      <span class="logo">FABY<span style="color:var(--red);">ANA</span></span>
+      <span>&copy; 2026 Fabiana Cordeiro — CREF 040677G.SC. Todos os direitos reservados.</span>
+    </footer>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="footer-grid reveal">
-      <div class="footer-brand">
-        <a href="#home" class="logo">FABY<span>ANGEL</span></a>
-        <p>Personal Trainer especializada em treinos personalizados, emagrecimento, hipertrofia e definição muscular. Sua transformação começa com o primeiro passo.</p>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/fabyangel_tudo_fitness" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-          </a>
-          <a href="#" class="wa-link" aria-label="WhatsApp">
-            <svg viewBox="0 0 32 32" fill="currentColor" stroke="none"><path d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.6.8 5 2.1 7L3 29l6.7-2.2c1.9 1 4.1 1.6 6.3 1.6 7 0 12.7-5.6 12.7-12.5S23 3 16 3z" fill="none" stroke="#fff" stroke-width="1.6"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h5>Navegação</h5>
-        <a href="#sobre">Sobre</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#planos">Planos</a>
-        <a href="#faq">FAQ</a>
-      </div>
-      <div class="footer-col">
-        <h5>Contato</h5>
-        <a href="https://www.instagram.com/fabyangel_tudo_fitness" target="_blank" rel="noopener">@fabyangel_tudo_fitness</a>
-        <a href="#" class="wa-link">+55 48 99184-3136</a>
-        <p>Florianópolis, SC — Brasil</p>
-      </div>
-    </div>
-    <div class="footer-bottom reveal">
-      <span>© <span id="year"></span> Faby Angel Personal Trainer. Todos os direitos reservados.</span>
-      <span>Feito com dedicação para transformar vidas.</span>
-    </div>
-  </div>
-</footer>
 
-<a href="#" class="wa-float wa-link" aria-label="WhatsApp">
-  <svg viewBox="0 0 32 32"><path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.657.83 5.122 2.243 7.147L4 29l6.53-1.71a12.44 12.44 0 0 0 5.47 1.28c6.905 0 12.5-5.596 12.5-12.5S22.906 3 16.001 3Zm7.36 17.66c-.31.87-1.53 1.6-2.5 1.8-.66.14-1.52.25-4.42-.95-3.71-1.54-6.1-5.29-6.28-5.54-.18-.24-1.5-2-1.5-3.8s.94-2.68 1.28-3.05c.31-.34.68-.42.9-.42h.65c.21 0 .49-.08.76.58.31.75 1.05 2.6 1.14 2.78.09.19.15.4.03.65-.12.24-.18.4-.36.62-.18.21-.38.47-.55.63-.18.18-.37.37-.16.72.21.35.93 1.53 2 2.47 1.37 1.22 2.53 1.6 2.88 1.78.35.18.55.15.76-.09.21-.24.9-1.05 1.14-1.41.24-.35.47-.29.79-.18.32.12 2.05.97 2.4 1.14.35.18.58.26.66.41.09.15.09.85-.22 1.72Z"/></svg>
-</a>
+
+</body>
+</html>
 
 <script src="script.js"></script>
-</body>
 </html>
